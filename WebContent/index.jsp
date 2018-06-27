@@ -12,4 +12,6 @@ memberDto.setEmail2("naver.com");
 session.setAttribute("userInfo", memberDto);
 
 response.sendRedirect(root+ "/boardadmin?act=boardmenu");
+
+
 %>    
