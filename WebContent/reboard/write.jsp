@@ -1,10 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file= "/commons/template/top.jsp" %>
-<c:set var= "bcode" value= "${param.bcode }"></c:set>
-<c:set var= "pg" value= "${param.pg }"></c:set>
-<c:set var= "key" value= "${param.key }"></c:set>
-<c:set var= "word" value= "${param.word }"></c:set>
+<%@ include file= "/commons/board_common.jsp" %>
+<%@ include file= "/commons/comfirm.jsp" %>
 <script type="text/javascript">
 function writeArticle(){
 	if(document.writeForm.subject.value == ""){

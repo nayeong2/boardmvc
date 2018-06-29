@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file= "/commons/template/top.jsp" %>
+<%@ include file= "/commons/board_common.jsp" %>
+<%@ include file= "/commons/comfirm.jsp" %>
 <!-- title -->
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 	<tr>

@@ -48,7 +48,7 @@ $(document).ready(function() {
 			<p class= "menu_heading">${board.cname }</p>
 			<div class= "menu_body">
 		</c:if>
-		<a href= "${root }/${board.control}?act=mvwrite&bcode=${board.bcode}&pg=1&key=&word=">
+		<a href= "${root }/${board.control}?act=listarticle&bcode=${board.bcode}&pg=1&key=&word=">
 		${board.bname }
 		</a>
 		<c:if test="${i.index <menulist.size()-1 }">

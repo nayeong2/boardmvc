@@ -1,7 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file= "/commons/template/top.jsp" %>
-
+<%@ include file= "/commons/board_common.jsp" %>
+<%@ include file= "/commons/comfirm.jsp" %>
+<script type= "text/javascript">
+function listArticle(pg){
+	document.getElementById("act").value= "listarticle";
+	document.getElementById("bcode").value= "${bcode}";
+	document.getElementById("pg").value= pg;
+	document.getElementById("key").value= "${key}";
+	document.getElementById("word").value= "${word}";
+	
+	document.commonform.action= "${root}/reboard";
+	document.commonform.submit();
+}
+</script>
 <table width="100%" cellpadding="6" cellspacing="2" border="0"
 	bgcolor="#ffffff" style="border: #e1e1e1 solid 1px">
 	<tr>
@@ -19,10 +32,12 @@
 			align="center"><b>게시물이 등록되었습니다.</b><br>
 		<br>
 
-		<div align="center"><a href=""><img
-			src="${root }/img/board/b_wirtecf.gif" width="91" height="21"
-			border="0" align="absmiddle" alt="작성한 글 확인" hspace="10"></a><a
-			href=""><img src="${root }/img/board/poll_listbu1.gif"
+		<div align="center">
+		<a href="">
+			<img src="${root }/img/board/b_wirtecf.gif" width="91" height="21"
+			border="0" align="absmiddle" alt="작성한 글 확인" hspace="10"></a>
+			<a href="javascript:listArticle('${pg}');">
+			<img src="${root }/img/board/poll_listbu1.gif"
 			width="62" height="21" border="0" align="absmiddle" alt="목록보기"
 			hspace="10"></a>
 		</td>

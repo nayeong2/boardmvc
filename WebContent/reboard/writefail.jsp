@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ include file= "/commons/template/top.jsp" %>
-
+<%@ include file= "/commons/board_common.jsp" %>
+<%@ include file= "/commons/comfirm.jsp" %>
 <table width="100%" cellpadding="6" cellspacing="2" border="0"
 	bgcolor="#ffffff" style="border: #e1e1e1 solid 1px">
 	<tr>
@@ -10,7 +11,7 @@
 			border="0" align="absmiddle" hspace="6" vspace="6"> <b>게시판</b>
 		</td>
 	</tr>
-	<tr>
+	<tr>    
 		<td height="1" bgcolor="#e1e1e1"
 			style="overflow: hidden; padding: 0px;"></td>
 	</tr>

@@ -5,13 +5,11 @@ String root = request.getContextPath();
 
 MemberDto memberDto= new MemberDto();
 memberDto.setId("skdud");
-memberDto.setName("skdud");
+memberDto.setName("최나영");
 memberDto.setEmail1("skdud");
 memberDto.setEmail2("naver.com");
 
 session.setAttribute("userInfo", memberDto);
 
 response.sendRedirect(root+ "/boardadmin?act=boardmenu");
-
-
 %>    
